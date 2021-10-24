@@ -30,7 +30,7 @@ public class CalculoMedia {
 
     }
     public String getSituacao() {
-        double soma = this.nota1 + this.nota2;
+        double soma = getNota1() + getNota2();
         if (soma < 12) {
             return "Reprovado";
 
