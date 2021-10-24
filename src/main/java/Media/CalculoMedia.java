@@ -1,6 +1,7 @@
 package Media;
 
-class CalculoMedia {
+public class CalculoMedia {
+
     private double nota1;
     private double nota2;
 
