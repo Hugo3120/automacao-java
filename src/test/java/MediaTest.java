@@ -12,13 +12,13 @@ public class MediaTest {
         Assert.assertEquals("Reprovado", calculoMedia.getSituacao());
     }
 
-    @Test
-    public void testeComErro() throws Exception{
-        throw new Exception("Erro");
-
-
-
-    }
+//    @Test
+//    public void testeComErro() throws Exception{
+//        throw new Exception("Erro");
+//
+//
+//
+//    }
     @Test
     public void validaAprovado(){
         CalculoMedia calculoMedia = new CalculoMedia();
@@ -26,4 +26,5 @@ public class MediaTest {
         calculoMedia.setNota2(6);
         Assert.assertEquals("Aprovado", calculoMedia.getSituacao());
     }
+
 }
