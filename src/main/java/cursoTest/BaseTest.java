@@ -20,4 +20,6 @@ public class BaseTest {
     public void fechaNavegador(){
         driver.quit();
     }
+
+
 }
