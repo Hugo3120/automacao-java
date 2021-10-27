@@ -1,25 +1,19 @@
 package cursoTest;
 
+import core.Driver;
 import org.junit.After;
 import org.junit.Before;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseTest {
-    WebDriver driver;
 
     @Before
-    public void abreNavegador(){
-        System.setProperty("webdriver.chrome.driver", "C:/Program Files/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("http://www.lojaexemplodelivros.com.br/");
-        driver.manage().window().maximize();
+    public void abreNavegador() {
+        Driver.abreNavegador("http://www.lojaexemplodelivros.com.br/");
     }
 
     @After
     public void fechaNavegador(){
-        driver.quit();
+        Driver.fechaNavegador();
     }
-
 
 }
