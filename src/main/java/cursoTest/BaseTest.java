@@ -8,7 +8,7 @@ public class BaseTest {
 
     @Before
     public void abreNavegador() {
-        Driver.abreNavegador("http://www.lojaexemplodelivros.com.br/");
+        Driver.abreNavegador();
     }
 
     @After

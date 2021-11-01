@@ -6,10 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Driver {
     private static WebDriver driver;
 
-    public static void abreNavegador(String url) {
+    public static void abreNavegador() {
         System.setProperty("webdriver.chrome.driver", "C:/Program Files/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get(url);
         driver.manage().window().maximize();
     }
     public static   void fechaNavegador(){
