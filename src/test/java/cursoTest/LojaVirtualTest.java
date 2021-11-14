@@ -14,7 +14,7 @@ public class LojaVirtualTest extends BaseTest{
 	InicialPage inicialPage = new InicialPage();
 	@Test
 	public void testPesquisaLivro() {
-		Driver.setUrl("https://lojaexemplod.lojablindada.com");
+		Driver.setUrl("http://www.lojaexemplodelivros.com.br/");
 		inicialPage.setPesquisa("fortaleza digital", Keys.ENTER);
 		String livro = inicialPage.getTituloLivro();
 		Assert.assertEquals("[PRODUTO DE EXEMPLO] - Fortaleza Digital", livro);
@@ -24,7 +24,7 @@ public class LojaVirtualTest extends BaseTest{
 	
 	@Test
 	public void testPesquisaLivro_assertThat() {
-		Driver.setUrl("https://lojaexemplod.lojablindada.com");
+		Driver.setUrl("http://www.lojaexemplodelivros.com.br/");
 		inicialPage.setPesquisa("fortaleza digital", Keys.ENTER);
 		String livro = inicialPage.getTituloLivro();
 		Assert.assertEquals("[PRODUTO DE EXEMPLO] - Fortaleza Digital", livro);
@@ -36,7 +36,7 @@ public class LojaVirtualTest extends BaseTest{
 	
 	@Test
 	public void testClickLista() {
-		Driver.setUrl("https://lojaexemplod.lojablindada.com");
+		Driver.setUrl("http://www.lojaexemplodelivros.com.br/");
 		inicialPage.setPesquisa("html", Keys.ENTER);
 		
 		String preco = inicialPage.getPrecoLista();
